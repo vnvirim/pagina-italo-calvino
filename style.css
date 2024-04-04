@@ -1,0 +1,150 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #e15e00;
+    color:white;
+    margin: 0%;
+    font-family: "Inter";
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol{
+    margin:0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+}
+
+header nav ul, footer nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+header p, footer p{
+    font-weight: bold;
+}
+
+header nav ul a, footer nav ul a{
+    text-decoration: none;
+    color: white;
+} 
+
+header nav ul a:hover, footer nav ul a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.copertina{
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 20px;
+    grid-template-columns: 2fr 1fr;
+    gap: 128px;
+}
+
+.copertina h1{
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+.colore-1 .colore-2 .copertine {
+    height: 650px;
+}
+
+.colore-1{
+    background-color: #683510;
+    padding: 120px 20px;
+}
+
+.colore-2{
+    padding: 120px 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 120px;
+}
+
+.container .text {
+    font-size: 24px;
+    width: 66%;
+}
+
+.text-bold{
+    font-weight: bold;
+    font-size: 32px;
+    width: 66%;
+    padding: 120px 20px;
+}
+
+.container .image{
+    width: 33%;
+}
+
+.container .text h2{
+    font-size: 44px;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+}
+
+.copertine{
+    height: 700px;
+}
+
+.immagine-cop{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: auto;
+    padding-top: 60px;
+}
+
+footer{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+    max-width: 1200px;
+}
+@media (max-width: 600px) {
+    .copertina{
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .copertina h1{
+        font-size: 42px;
+    }
+
+    .container .text{
+        width: 100%;
+    }
+
+    .container .image{
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: column;
+        gap: 36px;
+    }
+}
